@@ -11,7 +11,7 @@ pipeline {
         AWS_EB_APP_NAME = "javawebapp-env"
         AWS_EB_APP_VERSION = "${BUILD_ID}"
         AWS_EB_ENVIRONMENT = "Javawebappenv-env"
-        
+
     }
 
     stages {
@@ -47,6 +47,7 @@ pipeline {
             }
         }
 
+
         stage('Package') {
             steps {
                 
@@ -73,7 +74,6 @@ pipeline {
             }
         }
 
-        
         stage('Deploy') {
             steps {
 
