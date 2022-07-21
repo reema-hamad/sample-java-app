@@ -58,7 +58,7 @@ pipeline {
 
         stage('publish artefacts to S3 Bucket'){
             steps{
-                sh "aws s3 cp ./target/**.war" "s3://$AWS_S3_BUCKET_$ARTIFACT_NAME"
+                sh "aws s3 cp ./target/**.war s3://$AWS_S3_BUCKET_$ARTIFACT_NAME"
             }
             
         }
