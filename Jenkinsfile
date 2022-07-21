@@ -6,6 +6,9 @@ pipeline {
         AWS_ACCESS_KEY_ID     = credentials('jenkins-aws-secret-key-id')
         AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
 
+        AWS_S3_BUCKET = "artefact-bucket11"
+        ARTIFACT_NAME = "hello-world.war"
+        
     }
 
     stages {
@@ -41,7 +44,6 @@ pipeline {
             }
         }
 
-        
         stage('Package') {
             steps {
                 
@@ -69,8 +71,9 @@ pipeline {
         }
 
         stage('Deploy') {
-              steps{
-                echo "Last Stage"
+            steps {
+                echo "Last Stage"            
+                
             }
         }
         
