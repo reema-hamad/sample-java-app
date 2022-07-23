@@ -51,7 +51,7 @@ pipeline {
                 sh """
 
                 mvn clean verify sonar:sonar \
-                -Dsonar.projectKey=Dareen-OnlineCohort-Project \
+                -Dsonar.projectKey=sample-Java \
                 -Dsonar.host.url=http://$SONAR_IP \
                 -Dsonar.login=$SONAR_TOKEN
 
