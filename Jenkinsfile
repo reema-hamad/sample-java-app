@@ -8,9 +8,9 @@ pipeline {
 
         AWS_S3_BUCKET = "artefact-bucket11"
         ARTIFACT_NAME = "hello-world.war"
-        AWS_EB_APP_NAME = "Javawebappenv-env2"
+        AWS_EB_APP_NAME = "java-webapp-1"
         AWS_EB_APP_VERSION = "${BUILD_ID}"
-        AWS_EB_ENVIRONMENT = "Javawebappenvenv2-env"
+        AWS_EB_ENVIRONMENT = "Javawebapp1-env"
 
     }
 
