@@ -12,8 +12,8 @@ pipeline {
         AWS_EB_APP_VERSION = "${BUILD_ID}"
         AWS_EB_ENVIRONMENT = "Web1-env"
 
-        //SONAR_IP = "54.226.50.200"
-        //SONAR_TOKEN = "sqp_ca8ceffb110a3b17e4fb4d720872b3b9c65f3f90"
+        SONAR_IP = "54.226.50.200"
+        SONAR_TOKEN = "sqp_5df6b13bd8dbf767d722a51c204324b11591df6d"
     }
     stages {
         stage('Validate') {
@@ -46,7 +46,7 @@ pipeline {
                 }
             }
         }
-        /*stage('Quality Scan') {
+        stage('Quality Scan') {
             steps {
                 sh """
 
@@ -57,7 +57,7 @@ pipeline {
 
                 """
             }
-        }*/
+        }
     
         stage('Package') {
             steps {
