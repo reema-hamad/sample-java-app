@@ -8,9 +8,9 @@ pipeline {
         AWS_S3_BUCKET = "artefact-bucket11"
         ARTEFACT_NAME = "hello-world.war"
 
-        AWS_EB_APP_NAME = "java-webapp-1"
+        AWS_EB_APP_NAME = "web1"
         AWS_EB_APP_VERSION = "${BUILD_ID}"
-        AWS_EB_ENVIRONMENT = "Javawebapp1-env"
+        AWS_EB_ENVIRONMENT = "Web1-env"
 
         //SONAR_IP = "54.226.50.200"
         //SONAR_TOKEN = "sqp_ca8ceffb110a3b17e4fb4d720872b3b9c65f3f90"
