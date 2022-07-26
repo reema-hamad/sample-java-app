@@ -5,12 +5,12 @@ pipeline {
         AWS_ACCESS_KEY_ID = credentials('jenkins-aws-secret-key-id')
         AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
 
-        AWS_S3_BUCKET = "artefact-bucket11"
+        AWS_S3_BUCKET = "selenum"
         ARTEFACT_NAME = "hello-world.war"
 
-        AWS_EB_APP_NAME = "web1"
+        AWS_EB_APP_NAME = "selenum1"
         AWS_EB_APP_VERSION = "${BUILD_ID}"
-        AWS_EB_ENVIRONMENT = "Web1-env"
+        AWS_EB_ENVIRONMENT = "Selenum1-env"
 
         SONAR_IP = "54.226.50.200"
         SONAR_TOKEN = "sqp_5df6b13bd8dbf767d722a51c204324b11591df6d"
